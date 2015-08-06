@@ -11,3 +11,5 @@ You can run
 make runtests
 ```
 to run the test programs. If you see "All tests passed!", then EasySandbox is working on your system.
+## Dependencies
+* [Python-markdown](pypi.python.org/pypi/Markdown)
