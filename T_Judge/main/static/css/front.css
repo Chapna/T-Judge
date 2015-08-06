@@ -188,7 +188,6 @@ body {
     -moz-transition: all .3s;
     -o-transition: all .3s;
     -webkit-transition: all .3s;
-    -ms-transition: all .3s;
     transition: all .3s;
 }
 
@@ -221,19 +220,18 @@ body {
 }
 
 /*--boxes--*/
-.box:first-child {
-    margin-left: 0;
-}
-
-.b-box {
-    padding: 20px 40px;
-    background: #4ba2d0; /* box background */
+.box {
+    background: #EB9514; /* box background */
     -webkit-box-shadow: 1px 2px 3px #000;
     -moz-box-shadow: 1px 2px 3px #111;
     box-shadow: 1px 2px 3px #1d1d1d;
     -webkit-border-radius: .3em;
     -moz-border-radius: .3em;
     border-radius: .3em;
+}
+
+.b-box {
+    padding: 20px 40px;
 }
 
 .b-box h1 {
@@ -265,13 +263,6 @@ body {
     height: 250px;
     text-align: center;
     margin-left: 700px;
-    background: #4ba2d0; /* box background */
-    -webkit-box-shadow: 1px 2px 3px #000;
-    -moz-box-shadow: 1px 2px 3px #111;
-    box-shadow: 1px 2px 3px #1d1d1d;
-    -webkit-border-radius: .3em;
-    -moz-border-radius: .3em;
-    border-radius: .3em;
 }
 
 .s-box h1 {
@@ -327,7 +318,7 @@ body {
     position: relative;
     margin: 1.8em 0;
     height: 35px;
-    background: #126e9f; /* footer background */
+    background: #EB9514; /* footer background */
     -webkit-border-radius: .3em;
     -moz-border-radius: .3em;
     border-radius: .3em;
@@ -439,7 +430,7 @@ form span {
 .content form input[type=submit] {
     cursor: pointer;
     color: #000;
-    background: #1582bc;
+    background: #EB9514;
     padding: 8px 15px;
     border: 1px solid #000;
     -webkit-border-radius: .3em;
@@ -448,7 +439,7 @@ form span {
 }
 
 .content form input[type=submit]:hover {
-    background: #126e9f;
+    background: #D38612;
 }
 
 .content form textarea {
@@ -486,19 +477,6 @@ select.error {
 
 .demo-header a:hover {
     color: #ff4800;
-}
-
-#slider {
-    width: 990px;
-    height: 300px;
-
-    /*IE bugfix*/
-    padding: 0;
-    margin: 0;
-}
-
-#slider li {
-    list-style: none;
 }
 
 #page {
