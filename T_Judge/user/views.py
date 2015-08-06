@@ -54,7 +54,6 @@ class UserLogin(FormView):
         next_url = self.request.GET.get('next', None)
         if next_url:
             kwargs.update({'next': next_url})
-            print(next_url)
         return kwargs
 
     def form_valid(self, form):
