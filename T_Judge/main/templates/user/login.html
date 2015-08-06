@@ -9,7 +9,7 @@
             <div class="box sl-box">
                 <h1>Login</h1>
 
-                <form class="cmxform" id="contactForm" method="POST" action="{% url 'user_login' %}">
+                <form id="contactForm" method="POST" action="{% url 'user_login' %}">
                     {% csrf_token %}
                     {{ form.as_p }}
                     <div>

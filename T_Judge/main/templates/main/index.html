@@ -12,7 +12,7 @@
         <div class="box s-box">
             <h1>Login</h1>
 
-            <form class="cmxform" id="contactForm" method="POST" action="{% url 'home' %}/">
+            <form id="contactForm" method="POST" action="{% url 'home' %}/">
                 {% csrf_token %}
                 {{ form.as_p }}
                 <div>
