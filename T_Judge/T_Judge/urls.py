@@ -10,7 +10,7 @@ from api.views import GetNews
 
 urlpatterns = [
     # Examples:
-    # url(r'^$', 'EnerWat.views.home', name='home'),
+    # url(r'^$', 'T-Judge.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),

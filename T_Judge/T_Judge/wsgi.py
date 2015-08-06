@@ -1,5 +1,5 @@
 """
-WSGI config for EnerWat project.
+WSGI config for T_Judge project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "EnerWat.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "T_Judge.settings")
 
 application = get_wsgi_application()
