@@ -16,8 +16,9 @@ class Submit(models.Model):
 
 
 class Problem(models.Model):
-    pass
+    homework = models.ForeignKey('Homework')
 
 
 class Homework(models.Model):
-    pass
+    deadline = models.DateTimeField(verbose_name='Deadline')
+    beginning = models.DateTimeField(verbose_name='Beginning')
