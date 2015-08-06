@@ -256,6 +256,43 @@ body {
     border-bottom: 2px dotted #d9c8be;
 }
 
+/* markdown */
+.markdown {
+    all: initial;
+    font-style: normal;
+}
+
+.markdown em {
+    font-style: italic;
+}
+
+.markdown strong {
+    font-weight: bold;
+}
+
+.markdown ul {
+    list-style: square;
+}
+
+.markdown ol {
+    list-style: decimal;
+}
+
+.markdown a {
+    text-decoration: underline;
+}
+
+.markdown code {
+    padding: 5px;
+    border-radius: 0 0 0 0;
+    background-color: #444444;
+    color: #ffc152;
+}
+
+.markdown blockquote {
+    font-style: italic;
+}
+
 /*Table*/
 .table {
     display: table;
@@ -368,23 +405,6 @@ body {
     color: #c4ac9e;
 }
 
-.book-list {
-    margin: 4em 0;
-}
-
-.book-list li {
-    padding: 7px 0;
-    font-size: 14px;
-    color: #C4AC9E;
-
-}
-
-.book-list li:first-child {
-    color: #9DC41D;
-    font-size: 18px;
-
-}
-
 /* form */
 .form {
     font-size: .8em;
@@ -488,4 +508,3 @@ select.error {
     font-weight: bold;
     margin: 12px 0;
 }
-
