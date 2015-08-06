@@ -2,7 +2,7 @@ T-Judge
 =========
 ## Introduction
 C Course manager system was written in python and Django framework that supports online judging
-and news fetching RESET API. 
+and news fetching REST API. 
 ## Online Judging
 ## Sand Boxing
 For safe running our C programs we use [EasySandbox](https://github.com/daveho/EasySandbox).
