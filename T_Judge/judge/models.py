@@ -9,8 +9,8 @@ class Submit(models.Model):
     status = models.CharField(choices=(('Compilation Error', 'ce'),
                                        ('Wrong Answer', 'wr'),
                                        ('Runtime Error', 're'),
-                                       ('Time Limit Exceeded', 'tl'))
-                              , verbose_name='Status', max_length=255)
+                                       ('Time Limit Exceeded', 'tl')),
+                              verbose_name='Status', max_length=255)
     source_code = models.FileField(upload_to='source_codes', verbose_name='Source Code')
     problem = models.ForeignKey('Problem')
 
