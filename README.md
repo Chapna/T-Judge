@@ -13,3 +13,4 @@ make runtests
 to run the test programs. If you see "All tests passed!", then EasySandbox is working on your system.
 ## Dependencies
 * [django-markdown-deux](https://github.com/trentm/django-markdown-deux)
+* [EasySandbox](https://github.com/daveho/EasySandbox)
