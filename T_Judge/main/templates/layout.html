@@ -43,8 +43,6 @@
                     <li><a href="{% url 'user_login' %}">Sign-In</a></li>
                 {% endif %}
 
-                <li><a href="{% url 'user_logout' %}">Logout</a></li>
-
                 <li><a href="#">Course Information</a>
                     <ul>
                         <li>
@@ -77,6 +75,10 @@
                 <li>
                     <a href="{% url 'contact' %}">Contact Us</a>
                 </li>
+
+                {% if request.user.is_authenticated %}
+                    <li><a href="{% url 'user_logout' %}">Logout</a></li>
+                {% endif %}
             </ul>
             <div class="clear"></div>
         </nav>
