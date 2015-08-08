@@ -10,9 +10,12 @@ def gcc_compile(source_file: str, executable_file: str):
     source_file = os.path.join(settings.BASE_DIR, source_file)
     executable_file = os.path.join(settings.BASE_DIR, executable_file)
     try:
-        subprocess.check_output(['gcc', source_file, '-o', executable_file, '-lm'], stderr=subprocess.STDOUT)
+        subprocess.check_output(['gcc', source_file, '-o', executable_file, '-lm'], stderr=subprocess.STDOUT,
+                                timeout=10)
     except subprocess.CalledProcessError as exception:
         print(exception.output)
+    except subprocess.TimeoutExpired as exception:
+        print("Compilation cancelled after {}".format(exception.timeout))
     else:
         print("Compilation was successful")
 
