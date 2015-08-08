@@ -37,7 +37,6 @@ def run_and_test(executable_file: str, test_file: str, answer_file: str):
 
 
 def diff(result_file: io.TextIOBase, answer_file: io.TextIOBase):
-
     res = result_file.readlines()
     ans = answer_file.readlines()
 
