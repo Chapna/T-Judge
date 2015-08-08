@@ -71,6 +71,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django_settings_export.settings_export',
             ],
         },
     },
@@ -109,7 +110,15 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# Export settings into template
+SETTINGS_EXPORT = [
+    'INSTRUCTOR_HOMEPAGE',
+    'INSTRUCTOR_NAME',
+]
+
 # T_Judge custom setting
 # see README.md for more information
 
 PATH_TO_EASYSANDBOX = ''
+INSTRUCTOR_HOMEPAGE = 'http://ceit.aut.ac.ir/~bakhshis'
+INSTRUCTOR_NAME = 'Dr.Bakhshi'
