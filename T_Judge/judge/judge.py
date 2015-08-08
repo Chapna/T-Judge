@@ -1,5 +1,6 @@
 import subprocess
 import os
+import io
 from django.conf import settings
 
 
@@ -32,5 +33,5 @@ def run_and_test(executable_file: str, test_file: str, answer_file: str):
             pass
 
 
-def diff(result_file: str, answer_file: str):
+def diff(result_file: io.TextIOBase, answer_file: io.TextIOBase):
     pass
