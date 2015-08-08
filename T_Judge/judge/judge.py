@@ -30,3 +30,7 @@ def run_and_test(executable_file: str, test_file: str, answer_file: str):
         rc = subprocess.call([executable_file], env=env, stdin=test_fd, stdout=output_fd)
         if not rc:
             pass
+
+
+def diff(result_file: str, answer_file: str):
+    pass
