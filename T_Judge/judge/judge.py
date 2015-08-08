@@ -46,4 +46,4 @@ def diff(result_file: io.TextIOBase, answer_file: io.TextIOBase):
     for i in range(len(res)):
         if res[i] != ans[i]:
             return False
-    pass
+    return True
