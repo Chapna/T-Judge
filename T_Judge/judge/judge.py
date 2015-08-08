@@ -36,13 +36,14 @@ def run_and_test(executable_file: str, test_file: str, output_file: str):
 
 
 def diff(result_file: io.TextIOBase, answer_file: io.TextIOBase):
-    res = result_file.readlines()
-    ans = answer_file.readlines()
+    res_lines = result_file.readlines()
+    ans_lines = answer_file.readlines()
 
-    if len(res) != len(ans):
+    if len(res_lines) != len(ans_lines):
         return False
 
-    for i in range(len(res)):
-        if res[i] != ans[i]:
-            return False
+    for res_line in res_lines:
+        for ans_line in ans_lines:
+            if res_line != ans_line:
+                return False
     return True
