@@ -20,7 +20,7 @@ def gcc_compile(source_file: str, executable_file: str) -> str:
         return "Compilation was successful"
 
 
-def run_and_test(executable_file: str, test_file: str, output_file: str):
+def run_and_test(executable_file: str, test_file: str, output_file: str) -> str:
     executable_file = os.path.join(settings.BASE_DIR, executable_file)
     test_file = os.path.join(settings.BASE_DIR, test_file)
 
@@ -32,10 +32,12 @@ def run_and_test(executable_file: str, test_file: str, output_file: str):
     with open(test_file, 'r', 0) as test_fd, open(output_file, 'w', 0) as output_fd:
         rc = subprocess.call([executable_file], env=env, stdin=test_fd, stdout=output_fd)
         if not rc:
-            pass
+            return "Run was successful"
+        else:
+            return "Runtime error"
 
 
-def diff(result_file: io.TextIOBase, answer_file: io.TextIOBase):
+def diff(result_file: io.TextIOBase, answer_file: io.TextIOBase) -> bool:
     res_lines = result_file.readlines()
     ans_lines = answer_file.readlines()
 
